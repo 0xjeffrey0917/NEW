@@ -5,7 +5,8 @@ import { cn } from '@/lib/utils';
 
 const languages = [
   { code: 'en', name: 'English', flag: '🇺🇸' },
-  { code: 'zh', name: '中文', flag: '🇨🇳' }
+  { code: 'zh', name: '中文', flag: '🇨🇳' },
+  { code: 'ja', name: '日本語', flag: '🇯🇵' }
 ] as const;
 
 export function LanguageSwitch() {

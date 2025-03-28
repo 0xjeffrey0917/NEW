@@ -1,5 +1,6 @@
 import React, { useState, useRef } from 'react';
 import { Upload, Sparkles, Share2, Twitter, ChevronDown, Menu, X, Mail, Globe, Download } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import { useLanguage } from '@/lib/i18n/LanguageContext';
 import { LanguageSwitch } from '@/components/LanguageSwitch';
 
@@ -104,6 +105,7 @@ function App() {
           
           {/* Desktop Navigation */}
           <div className="hidden md:flex flex-grow justify-center space-x-8">
+            <Link to="/gif-maker" className="hover:text-gray-300">Gif Maker</Link>
             <a href="#features" className="hover:text-gray-300">{t('nav.features')}</a>
             <a href="#how-it-works" className="hover:text-gray-300">{t('nav.howItWorks')}</a>
             <a href="#pricing" className="hover:text-gray-300">{t('nav.pricing')}</a>
@@ -131,6 +133,7 @@ function App() {
         {isMenuOpen && (
           <div className="md:hidden bg-black/95 p-4">
             <div className="flex flex-col space-y-4">
+              <Link to="/gif-maker" className="hover:text-gray-300">Gif Maker</Link>
               <a href="#features" className="hover:text-gray-300">{t('nav.features')}</a>
               <a href="#how-it-works" className="hover:text-gray-300">{t('nav.howItWorks')}</a>
               <a href="#pricing" className="hover:text-gray-300">{t('nav.pricing')}</a>
